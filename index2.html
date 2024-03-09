@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatri Patel - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2798b7;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h3 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project p {
+            padding: 15px;
+            margin: 0;
+            color: #333;
+        }
+
+        .project a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #2798b7;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .project a:hover {
+            background-color: #2798b7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #9acad7;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yatri Patel</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Highly skilled and motivated Frontend Developer with a passion for UI/UX design. My proficiency in HTML, CSS, and JavaScript allows me to bring designs to life while ensuring seamless functionality. Moreover, I excel in managing multiple projects simultaneously, meeting deadlines, and coordinating with cross-functional teams. My confidence in my abilities drives me to consistently deliver high-quality work, and I continuously seek opportunities to enhance my skills.
+        </p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <!-- Example Project 1 -->
+            <div class="project">
+                <h3>Weather App</h3>
+                
+                <p>Check the current weather conditions with this responsive weather app.</p>
+                <a href="https://github.com/yatripatel2003/Weather-App">View Project</a>
+            </div>
+
+            <!-- Example Project 2 -->
+            <div class="project">
+                <h3>Responsive Web App</h3>
+                
+                <p>Create a stunning responsive web application with this project.</p>
+                <a href="https://github.com/yatripatel2003/Responsive-web-application">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Tic-Tac-Toe Game</h3>
+                
+                <p>Enjoy a classic game of Tic-Tac-Toe with this interactive web application.</p>
+                <a href="https://github.com/yatripatel2003/TIC-TAC-TOE-">View Project</a>
+            </div>
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact me at: yatripatel003@gmail.com</p>
+    </footer>
+
+    <script>
+        // Smooth scroll to the projects section
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
